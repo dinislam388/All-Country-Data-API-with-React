@@ -1,0 +1,154 @@
+/* ==========< Google Fonts >==========  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* / ===========< variables >=========== / */
+:root{
+    /* / colors / */
+    --primary-color:#F68822;
+    --secondary-color: #1E1E1E;
+    --text-color:#fff;
+    --bg-color-1: teal;
+    --bg-color-2:gray;
+    --accent-color: rgb(10, 39, 93);
+
+    /* / fonts / */
+    --fs-lg: 3rem;
+    --fs-md:2rem;
+    --fs-sm:1.2rem;
+
+    --fw-bold:700;
+    --fw-semi-bold:600;
+    --fw-medium:500;
+    --fw-regular:400;
+    --fw-light:300;
+
+    --section-padding: 3rem 0;
+
+}
+/* /======== Use a more-intuitive box-sizing model & Remove default margin,padding ========/ */
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* /======== Add accessible line-height & Improve text rendering ========/ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  text-rendering: optimizeSpeed;
+}
+
+/* /======== Improve media defaults ========/ */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* /======== Remove built-in form typography styles ========/ */
+input,
+button,
+textarea,
+select,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+/* / ========== Reset a & span  & ul & li ========== / */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span{
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* /======== Avoid text overflows ========*/ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ================> Main CSS <================ */
+
+
+.heading {
+  font-size: 32px;
+  background-color: black;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.headingLenth {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.countryName {
+    font-size: 22px;
+}
+
+.capitalName {
+    font-size: 20px;
+}
+
+.regionName {
+    font-size: 18px;
+}
+
+.counterMap {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.countryInfo {
+    border-radius: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.countryInfo:hover {
+    box-shadow: 0px 0px 20px #7b7b7b;
+}
+
+.flagsImg {
+    width: 100%;
+}
+
+@media(max-width:840px) {
+    .counterMap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 567px){
+    .counterMap {
+        grid-template-columns: auto;
+    }
+}
